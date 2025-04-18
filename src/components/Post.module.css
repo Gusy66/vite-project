@@ -102,10 +102,6 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.1s;
-
-    visibility: hidden;
-    max-height: 0;
-    display: none;
 }
 
 .commentForm button[type=submit]:hover {
@@ -115,4 +111,17 @@
 .commentForm footer {
     visibility: hidden;
     max-height: 0;
+}
+
+.commentForm:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.commentList {
+    background: var(--gray-500);
+}
+
+.commeList {
+    margin-top: 2rem;
 }
